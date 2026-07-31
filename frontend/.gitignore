@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+.vite/
+*.tsbuildinfo
+
+# Vite reads .env files. VITE_-prefixed variables are baked into the bundle
+# and are therefore PUBLIC. Never put a secret in one.
+.env
+.env.local
+.env.*.local

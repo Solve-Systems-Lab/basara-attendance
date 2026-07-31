@@ -1,0 +1,60 @@
+/* Design tokens.
+ *
+ *     OWNER: UI/UX track — MINIONS own this file.
+ *
+ * This is a skeleton, not a design system. The values below are placeholders
+ * borrowed from the course brief so that something renders; replacing them
+ * with a real Basar palette is your Sprint 1 task.
+ *
+ * Tailwind v4 has no tailwind.config.js. Tokens are declared as CSS custom
+ * properties and exposed to utility classes through @theme inline below.
+ * Declare a token once here and `bg-surface`, `text-ink` etc. just work.
+ *
+ * The rule that matters: a token nothing references is a comment. When you
+ * add a token, bind a component to it in the same commit.
+ */
+
+:root {
+  --color-navy: #0e2a47;
+  --color-accent: #c6672b;
+
+  --color-background: #ffffff;
+  --color-surface: #f4f7fa;
+  --color-ink: #16212e;
+  --color-muted: #5b6b7c;
+  --color-line: #d9e0e8;
+
+  /* Attendance status. Five states, five colours, one source of truth.
+   * Hand these to the FE track rather than letting each screen pick its own. */
+  --color-present: #1e7a4c;
+  --color-absent: #b5451b;
+  --color-leave: #3b5998;
+  --color-holiday: #6b5b95;
+  --color-today: #0e2a47;
+
+  --radius: 0.625rem;
+}
+
+.dark {
+  --color-background: #0d1520;
+  --color-surface: #16212e;
+  --color-ink: #e8eef4;
+  --color-muted: #93a3b4;
+  --color-line: #2a3a4d;
+}
+
+@theme inline {
+  --color-navy: var(--color-navy);
+  --color-accent: var(--color-accent);
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-ink: var(--color-ink);
+  --color-muted: var(--color-muted);
+  --color-line: var(--color-line);
+  --color-present: var(--color-present);
+  --color-absent: var(--color-absent);
+  --color-leave: var(--color-leave);
+  --color-holiday: var(--color-holiday);
+  --color-today: var(--color-today);
+  --radius-DEFAULT: var(--radius);
+}

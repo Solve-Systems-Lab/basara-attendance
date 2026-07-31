@@ -1,0 +1,37 @@
+# Secrets. This line is the single most important one in the file.
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+/staticfiles/
+
+# Media — uploaded attendance photos and face enrolment images.
+# These are biometric data belonging to real students. They must never
+# reach a git repository, public or private.
+/media/
+
+# Face models (downloaded from the class server, not versioned)
+/models/*.onnx
+
+# Node / frontend
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+npm-debug.log*
+.env.local
+.env.*.local
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp

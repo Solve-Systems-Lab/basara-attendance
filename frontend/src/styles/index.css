@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+@import './theme.css';
+
+html {
+  /* The app is used standing up, on a phone, in a classroom. */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-ink);
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, Arial,
+    sans-serif;
+}
