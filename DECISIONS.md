@@ -149,6 +149,16 @@ The reference repo's `deploy-backend.yml` is `git pull && migrate && restart gun
 
 ---
 
+## 9a. Toolchain constraints found while building the repo (31 July)
+
+**Python 3.12 or 3.13 — not 3.14.** This machine's default `python3` is 3.14.5. The pinned `numpy`, `pandas`, `onnxruntime` and `Pillow` ship wheels for cp310–cp313 and nothing for cp314, so pip falls back to compiling from source. That needs the C++ toolchain `INSTRUCTOR-PREP.md` promises students won't need, and `onnxruntime` will not build at all. Documented in the README and on page 4 of the brief. **Say this out loud in class** — anyone with a fresh Python install will hit it.
+
+**pip needs `--timeout 30 --retries 8` on this network.** A plain install stalled for 28 minutes with open connections to PyPI and no bytes moving. Also `--no-cache-dir`: the local cache is corrupt and reports "Cache entry deserialization failed", which surfaces as the misleading "Could not find a version that satisfies the requirement Django==5.1.4".
+
+**`npm install` over campus WiFi is the risk we accepted in §1.** Downloads here ran at roughly 150 kB/s. If it is unworkable for 100 laptops at once, the fallback is a local registry mirror on the class server, not abandoning the frontend.
+
+---
+
 ## 10. Open items
 
 - GitHub org and repo URL — placeholder `<repo-url>` in the brief until confirmed.
