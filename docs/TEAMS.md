@@ -17,10 +17,10 @@ then read your track page in [`brief.pdf`](brief.pdf).
 | **ASTERIX** | FE | `team/asterix` | 5 |
 | **GRP8** | FE | `team/grp8` | 5 |
 | **GRP14** | FE | `team/grp14` | 4 |
+| **GRP4** | UI/UX | `team/grp4` | 5 |
 | **MINIONS** | UI/UX | `team/minions` | 4 |
 | **AGENTS** | UI/UX | `team/agents` | 4 |
 | **NEXAAI** | UI/UX | `team/nexaai` | 2 |
-| **GRP4** | ML | `team/grp4` | 5 |
 | **GRP11** | ML | `team/grp11` | 5 |
 | **ANUSHA** | ML | `team/anusha` | 4 |
 | **BALAJI** | ML | `team/balaji` | 4 |
