@@ -12,15 +12,15 @@ venv/
 # Django
 db.sqlite3
 db.sqlite3-journal
-/staticfiles/
+backend/staticfiles/
 
 # Media — uploaded attendance photos and face enrolment images.
 # These are biometric data belonging to real students. They must never
 # reach a git repository, public or private.
-/media/
+backend/media/
 
 # Face models (downloaded from the class server, not versioned)
-/models/*.onnx
+backend/models/*.onnx
 
 # Node / frontend
 node_modules/

@@ -1,7 +1,7 @@
 # Teams and branches
 
 Nineteen groups, 106 students, five tracks. Find your group, check out your branch,
-then read your track page in [`docs/brief.pdf`](docs/brief.pdf).
+then read your track page in [`brief.pdf`](brief.pdf).
 
 > Student names and email addresses are deliberately **not** in this repository.
 > It is public, indexed, and effectively permanent. The printed brief handed out in
@@ -53,4 +53,4 @@ is guaranteed to match the one on your printed brief. Open your pull request aga
 `dev`, and have a group from another track review it.
 
 If you do not have push access yet, see **Contributing** in the
-[README](README.md) — the fork-and-pull-request route works with no setup at all.
+[README](../README.md) — the fork-and-pull-request route works with no setup at all.
