@@ -7,7 +7,7 @@ Attendance for this course is taken on a paper sheet — passed along the rows, 
 ```
 backend/     Django + DRF — the API, the data model, face matching, the LLM
 frontend/    React + Tailwind — what a student actually touches
-docs/        the build brief, the team list, the decision log
+docs/        your group's work card, the build brief, the team list, the decisions
 ```
 
 ## Start here
@@ -15,7 +15,9 @@ docs/        the build brief, the team list, the decision log
 | You want | Go to |
 |---|---|
 | **Which group am I in, and what is my branch?** | [docs/TEAMS.md](docs/TEAMS.md) |
-| **What is my track building this sprint?** | [docs/brief.pdf](docs/brief.pdf) — architecture diagram, then your track page |
+| **What exactly does MY group build?** | [docs/group-cards.pdf](docs/group-cards.pdf) — one card per group: your files, your tasks, who you wait on |
+| **How does it all fit together?** | [docs/brief.pdf](docs/brief.pdf) — architecture, the request flow, and **the API contract** |
+| **Who is blocking me?** | [docs/brief.pdf](docs/brief.pdf) — *Order of Work* and *Who Blocks Whom* |
 | **Why is the stack what it is?** | [docs/DECISIONS.md](docs/DECISIONS.md) |
 | **How do I run it?** | [Running it](#running-it), below |
 | **How do I get my work merged?** | [Contributing](#contributing), below |
@@ -104,7 +106,7 @@ frontend/
   src/styles/                 design tokens, theme            UI/UX
   src/app/components/ui/      shared primitives               UI/UX
 
-docs/               brief, team list, decision log
+docs/               group-cards.pdf, brief.pdf, TEAMS.md, DECISIONS.md
 ```
 
 `backend/core/models.py` is **already written** — nine models covering students, sessions, attendance records, photos, coordinates, face scores, session codes and the audit log. Read it before you write anything. Do not rewrite it.
